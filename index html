@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacia Primus | Justiça e Transparência</title>
+    <meta name="description" content="Escritório de advocacia especializado em direito civil e trabalhista com atendimento acessível.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header>
+        <div class="container">
+            <div class="logo">Advocacia <span>Primus</span></div>
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <h1 id="hero-title">Defendendo seus direitos com excelência e ética.</h1>
+                <p>Consultoria jurídica especializada com foco em soluções ágeis e humanas.</p>
+                <a href="#contato" class="btn-primary">Agende uma consulta</a>
+            </div>
+        </section>
+
+        <section id="servicos" class="servicos container">
+            <h2>Nossas Áreas de Atuação</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Direito Civil</h3>
+                    <p>Resolução de conflitos, contratos e responsabilidade civil com foco no cliente.</p>
+                </article>
+                <article class="card">
+                    <h3>Direito do Trabalho</h3>
+                    <p>Defesa dos direitos do trabalhador e consultoria preventiva para empresas.</p>
+                </article>
+                <article class="card">
+                    <h3>Direito de Família</h3>
+                    <p>Mediação de conflitos familiares, divórcios e inventários com sensibilidade.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Advocacia Primus. Todos os direitos reservados.</p>
+            <p>Endereço: Rua da Justiça, 123 - Centro.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
