@@ -1,0 +1,155 @@
+/* Configurações Gerais e Acessibilidade */
+:root {
+    --primary-color: #002b5b; /* Azul Marinho Profundo */
+    --accent-color: #c5a059;  /* Dourado Elegante */
+    --text-color: #333;
+    --bg-light: #f4f7f6;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+    font-size: 1.1rem; /* Fonte levemente maior para facilitar leitura */
+}
+
+/* Link de salto para acessibilidade via teclado */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--accent-color);
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Layout */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    border-bottom: 2px solid var(--accent-color);
+    outline: none; /* Removido padrão para usar o border customizado */
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 25px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--white);
+    outline: 3px solid var(--accent-color);
+}
+
+/* Cards de Serviços */
+.servicos {
+    padding: 60px 0;
+}
+
+.servicos h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--bg-light);
+    padding: 30px;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+/* Foco visível para todos os elementos interativos */
+a:focus, button:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
